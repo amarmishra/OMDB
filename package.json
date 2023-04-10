@@ -1,0 +1,23 @@
+{
+  "name": "omdb-withoutjsmodule",
+  "version": "1.0.0",
+  "description": "A frontend project using open movie database api ",
+  "main": "index.js",
+  "scripts": {
+    "start":"nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amarmishra/OMDB.git"
+  },
+  "author": "amarmishra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amarmishra/OMDB/issues"
+  },
+  "homepage": "https://github.com/amarmishra/OMDB#readme",
+  "dependencies": {
+    "firebase": "^9.19.1"
+  }
+}

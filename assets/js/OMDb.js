@@ -1,4 +1,4 @@
-// import {namedMoudle} from 'filename.js'
+
 
 const searchForm = document.getElementById('search-movie-form');
 const inputBox = searchForm.getElementsByClassName('inputBox')[0];
@@ -24,6 +24,9 @@ let displayState; //a variable that maintain rendering state of the movies list(
   let favouriteList;
   if(localStorage.getItem(localStorageKey)){
     favouriteList=localStorage.getItem(localStorageKey).split(',')
+  }
+  else{
+    favouriteList=[];
   }
  
 
@@ -56,7 +59,7 @@ class SearchResult {
               </div>
               <div class='actionPanel'>
                   <span class='title'>${movie.Title}</span><span class='year'>(${movie.Year})</span>
-                  <button class='likeButton' data-id=${movie.imdbID}><img src='./static/heart-orange.png' alt='Like' style='color:#E76528'/></button>
+                  <button class='likeButton' data-id=${movie.imdbID}><img src='/static/heart-orange.png' alt='Like' style='color:#E76528'/></button>
               </div>
                               
           </div>`
@@ -92,7 +95,7 @@ class SearchResult {
      
       
       //attach scroll response element
-      searchResultContainer.innerHTML += `<div><img style="margin:auto;" src="./static/Infinity-1s-200px.svg" /></div>`
+      searchResultContainer.innerHTML += `<div><img style="margin:auto;" src="/static/Infinity-1s-200px.svg" /></div>`
       
       const{Response,Search}= await search(this.text, this.bottomPage);
 
@@ -179,7 +182,7 @@ async function changeSearchResult(e) {
     e.preventDefault();
     const text = e.target.value;
      //attach scroll response element
-     searchResultContainer.innerHTML = `<div><img style="margin:auto;" src="./static/Infinity-1s-200px.svg" /></div>`
+     searchResultContainer.innerHTML = `<div><img style="margin:auto;" src="/static/Infinity-1s-200px.svg" /></div>`
     
      if (text) {
         try{
@@ -232,7 +235,7 @@ const openDialogue = async (e) => {
   }
 
   //add loading animation to th dialog
-  dialogContainer.innerHTML=`<div><img style="margin:auto;" src="./static/Infinity-1s-200px.svg" /></div>`
+  dialogContainer.innerHTML=`<div><img style="margin:auto;" src="/static/Infinity-1s-200px.svg" /></div>`
   const response = await fetch(API_URLS.searchById(id));
   const { Response, ...movie } = await response.json();
 
@@ -248,7 +251,7 @@ const openDialogue = async (e) => {
       movie.Year
     }</span><button class='likeButton' data-id=${
       movie.imdbID
-    }><img src='./static/heart-orange.png' alt='Like' style='color:#E76528'/></button></div></div>
+    }><img src='/static/heart-orange.png' alt='Like' style='color:#E76528'/></button></div></div>
                 <div class='ratings'>
                     ${movie.Ratings.map((rating) => {
                       return `<div>
