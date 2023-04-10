@@ -34,7 +34,9 @@ in placement of tags.(I have heavily relied on the flex box style).
 
 Page 1: Main Page()
 
-Poster images of moveies of different size
+Poster images of movies of different size.
+Raw data is always a challengs for frontend development. 
+For asthetics purpose it's better to keep movie-cards of common height rather than to resize then based on the content(different image dimensions)
 
 Page 2:
 
