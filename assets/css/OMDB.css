@@ -302,7 +302,19 @@ dialog#movie-full-detail-container .body .details div span:nth-child(2) {
     font-size: 1.3em;
     }
 }
-@media (max-width: 576px) {
+@media only screen and (max-width : 576px){
+
+
+
+  #search-movie-form .favourite {
+    flex:auto;
+  }
+  #search-movie-form .inputBox {
+    flex:auto;
+  }
+
+
+
   button.forward {
     width: 2em;
   }

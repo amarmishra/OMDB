@@ -280,6 +280,7 @@ dialog#movie-full-detail-container .body .details div span:nth-child(2) {
     width: 2em;
   }
 
+
   button.backward {
     width: 2em;
   }
@@ -294,6 +295,10 @@ dialog#movie-full-detail-container .body .details div span:nth-child(2) {
         
         font-size: 1.3em;
     }
+
+    dialog#movie-full-detail-container .head .removeLikeButton  img{
+      width:32px;
+  }
 }
 
 /* notification animation style */
