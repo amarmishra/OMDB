@@ -50,7 +50,7 @@ a{
   margin: 7px;
 }
 #search-movie-form .inputBox {
-  font-size: x-large;
+  font-size: 1.2em;
   font-weight: lighter;
   font-style: italic;
   color: #745d5dc7;
@@ -280,13 +280,13 @@ dialog#movie-full-detail-container .body .details div span:nth-child(2) {
     background: #9b5114c4; 
   } */
 
-@media (min-width: 720px) {
+@media screen and (min-width: 720px) {
   #modal-close-btn {
     height: 19px;
   }
   
 }
-@media (min-width: 636px) and (max-width: 720px) {
+@media screen and (min-width: 636px) and (max-width: 720px) {
   #modal-close-btn {
     position: fixed;
     font-size: unset;
@@ -302,7 +302,7 @@ dialog#movie-full-detail-container .body .details div span:nth-child(2) {
     font-size: 1.3em;
     }
 }
-@media only screen and (max-width : 576px){
+@media screen and (max-width : 576px){
 
 
 
